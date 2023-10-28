@@ -1,0 +1,12 @@
+{
+  "name": "imagetoascii",
+  "version": "1.0.0",
+  "description": "A Node app that turns images to ascii text",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "PabluxFirpux",
+  "license": "ISC"
+}

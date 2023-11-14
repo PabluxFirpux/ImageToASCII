@@ -1,1 +1,3 @@
-console.log('Hello World');
+const createAsciiHTML = require('./imageToAscii');
+
+createAsciiHTML('./resources/todos.jpg');

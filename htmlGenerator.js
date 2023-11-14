@@ -11,7 +11,6 @@ const addTextToTemplate = (textArray) => {
 	var body = root.querySelector('body');
 	var text = body.getElementsByTagName('pre')[0];
 	text.set_content(textArray.join('\n'));
-	console.log('joined');
 	fs.writeFileSync('./out/image.html', root.toString(), 'utf8');
 };
 

@@ -1,3 +1,3 @@
 const createAsciiHTML = require('./imageToAscii');
 
-createAsciiHTML('./resources/todos.jpg');
+createAsciiHTML('./resources/gatitos.jpg');

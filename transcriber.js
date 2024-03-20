@@ -1,10 +1,9 @@
 const fs = require('fs');
 
-const turnASCII = (matrix) => {
-	const array = Array.from(matrix.data);
-	const width = matrix.shape[0];
-	const height = matrix.shape[1];
-	const size = width * height * 4;
+const turnASCII = (matrix, width, height) => {
+	const array = matrix;
+
+	const size = width*height*3;
 	let brightnessArray = turnBrightness(array, size);
 	let TwoDArray = turn2D(brightnessArray, width, height);
 	let textArray = toText(TwoDArray);
@@ -84,7 +83,7 @@ const turn2D = (array, width, height) => {
 
 const turnBrightness = (array, size) => {
 	var brightnessArray = [];
-	for (var i = 0; i < size; i += 4) {
+	for (var i = 0; i < size; i += 3) {
 		brightnessArray.push(Math.floor((array[i] + array[i + 1] + array[i + 2]) / 3));
 	}
 	return brightnessArray;

@@ -20,7 +20,7 @@ const copyTemplateToOutput = () => {
 	}
 	const path = require('path');
 	const dir = './out';
-	const template = './resources/template.html';
+	const template = './template/template.html';
 	const output = './out/image.html';
 	if (!fs.existsSync(dir)) {
 		fs.mkdirSync(dir);
